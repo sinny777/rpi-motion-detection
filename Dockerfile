@@ -31,4 +31,4 @@ RUN /usr/src/app/install-motion-latest.sh
 
 CMD /usr/src/app/entrypoint.sh
 
-EXPOSE 80
+EXPOSE 80 8081
