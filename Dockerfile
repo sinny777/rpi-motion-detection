@@ -29,6 +29,6 @@ RUN chmod 755 /usr/src/app/install-motion-latest.sh
 
 RUN /usr/src/app/install-motion-latest.sh
 
-CMD /usr/src/app/entrypoint.sh
+CMD /usr/src/app/entrypoint.sh 
 
 EXPOSE 80 8081
