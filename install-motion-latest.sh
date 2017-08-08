@@ -1,5 +1,3 @@
-# Update image
-apt-get update
 
 # Install packages
 apt-get -y install libavcodec-dev libavcodec0d libavformat-dev libavformat0d
@@ -13,6 +11,3 @@ rm -rf /etc/motion/motion.conf
 
 # Copy motion config file
 cp /usr/src/app/motion.conf /etc/motion/
-
-# Do some clean-up
-apt-get clean

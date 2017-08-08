@@ -22,7 +22,9 @@ COPY motion /usr/src/app
 RUN mkdir /tmp/motion
 RUN mkdir /tmp/motion/cam1
 RUN touch /tmp/motion/motion.log
+RUN sudo chmod 755 -R /tmp/motion/motion.log
 RUN sudo chmod 755 -R /tmp/motion
+RUN sudo chown motion /tmp/motion
 
 RUN chmod 755 /usr/src/app/entrypoint.sh
 RUN chmod 755 /usr/src/app/install-motion-latest.sh

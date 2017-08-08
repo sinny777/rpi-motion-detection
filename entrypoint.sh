@@ -1,9 +1,11 @@
 #!/bin/bash
 
+motion
+
 # Start motion
 /etc/init.d/motion restart
 
-service motion start
+service motion restart
 
 # Check if service is running
 service motion status
