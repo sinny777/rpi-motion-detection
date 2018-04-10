@@ -3,9 +3,9 @@
 motion
 
 # Start motion
-/etc/init.d/motion restart
+# /etc/init.d/motion restart
 
-service motion restart
+# service motion restart
 
 # Check if service is running
 service motion status
