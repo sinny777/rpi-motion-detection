@@ -11,15 +11,15 @@ echo 'exit 0' | sudo tee --append /etc/rc.local
 
 START CONTAINER
 
-`docker run --rm -it -d --name motion -p 80:8081 -v /tmp:/tmp --device=/dev/video0 hukam/rpi-motion-detection`
-
-TO START MOTION DETECTION
-
-`docker exec -it motion motion`
+`docker run --privileged -it -d --name motion -p 9090:9090 -p 9091:9091 -v /tmp:/tmp --device=/dev/video0 hukam/rpi-motion-detection`
 
 TO STOP
 
-`docker exec -it motion service motion stop`
+`docker stop motion`
+
+TO START MOTION DETECTION
+
+`docker start motion`
 
 ## REFERENCES
 [Motion Detection 1](https://github.com/remonlam/rpi-docker-motion)
